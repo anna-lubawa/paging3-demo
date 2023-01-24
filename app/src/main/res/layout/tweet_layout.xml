@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_corners_bg"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/twitterIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tweetDate"
+        app:srcCompat="@drawable/ic_twitter" />
+
+    <TextView
+        android:id="@+id/tweetDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2022-01-01 01:58:52" />
+
+    <TextView
+        android:id="@+id/tweetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_corners_bg"
+        android:backgroundTint="@color/tweet_grey_bg"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twitterIcon"
+        app:layout_constraintEnd_toEndOf="@+id/tweetDate"
+        app:layout_constraintStart_toEndOf="@+id/twitterIcon"
+        app:layout_constraintTop_toTopOf="@+id/twitterIcon"
+        tools:text="Lorem ipsum dolor sit amet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

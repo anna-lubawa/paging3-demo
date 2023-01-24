@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">paging3-demo</string>
+    <string name="oops_something_went_wrong">Oops! Something went wrong.</string>
+    <string name="retry">Retry</string>
+</resources>
